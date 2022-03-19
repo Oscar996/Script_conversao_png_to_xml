@@ -17,7 +17,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
   <images>' > "$outputfile"
 
 imagecount=$(ls $imagedir/*.png | wc -l)
-for imagefile in $imagedir/*.png; doa
+for imagefile in $imagedir/*.png; do
 	((imagesdone++))
 	echo "    <image>
       <name>$(basename "${imagefile%.png}")</name>
